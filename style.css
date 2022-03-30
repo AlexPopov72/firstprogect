@@ -1,0 +1,83 @@
+/*создаю разметку верхнего блока*/
+.flex-container_top {
+  display: flex;
+  background-color: #274646;
+
+height: 54px;
+/* width: 1920px;*/
+left: 0px;
+top: 0px;
+border-radius: 0px;
+
+justify-content: center;
+}
+
+.flex-container_mid {
+position: static;
+
+width: 1400px;
+height: 48px;
+left: 260px;
+
+/* Белый */
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 0px;
+
+
+justify-content: center;
+text-align: center;
+}
+/* Высота средней 48*/
+/* Высота нижней 56 */
+
+
+.navmidlspan {
+/* Пункт меню */
+position:relative;
+/*
+width: 66px;
+height: 16px;
+left: 10px;
+top: 16px;*/
+
+font-family: 'Value Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 16px;
+
+/* identical to box height */
+
+/* Темно-зеленый */
+color: #274646;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 24px 0px;
+padding: 10px;
+}
+
+
+/* Line 4 */
+.headermid_line{
+position: static;
+width: 1295px;
+height: 0px;
+left: 260px;
+bottom: 55px;
+
+border: 1px solid #E5E5E5;
+
+/* Inside auto layout */
+flex: non e;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 0px 0px;
+}
