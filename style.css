@@ -1,83 +1,137 @@
-/*создаю разметку верхнего блока*/
-.flex-container_top {
+li a:hover{
+  background: #0000f8;
+  color: #ffffff;
+  /*transition: all 0.3s ease;*/
+  border-bottom: 3px solid #274646;
+  z-index: 2;
+
+ }    
+
+header {
+  position: fixed;
+  /*display: flexbox;*/
+  width: 100%;
+  height: 158px;  
+  }
+
+
+.navmenu_mid {
   display: flex;
-  background-color: #274646;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+  width: 1295px;
+  height: 46px;
+  }
 
-height: 54px;
-/* width: 1920px;*/
-left: 0px;
-top: 0px;
-border-radius: 0px;
+  .navmenu_mid ul,  
+.navmenu_mid ol{
+ list-style: none;
+}    
+  .navmenu_mid *{
+    margin: 0;
+    padding: 0;
+   }
+   .navmenu_mid > ul{
+   display: inline-flex;
+   justify-content: center;
+  }
 
-justify-content: center;
-}
+  .navmenu_mid > ul li a{
+    display: block;
+    background: #fcfffb;
+    padding: 14px 22px;
+    text-emphasis: none;
+    font-size: 16px;
+    color: #454547;
+    text-decoration: none;
 
-.flex-container_mid {
-position: static;
+    
+   }    
+   .headermid_line {
+    width: 1295px;
+    top: 104px;
+    position: fixed;
+    border: 1px solid #E5E5E5;
+    
+    /* Inside auto layout */
+    order: 1;
+    justify-content: center;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+  }
 
-width: 1400px;
-height: 48px;
-left: 260px;
-
-/* Белый */
-background: #FFFFFF;
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 0px 0px;
-
-
-justify-content: center;
-text-align: center;
-}
-/* Высота средней 48*/
-/* Высота нижней 56 */
-
-
-.navmidlspan {
-/* Пункт меню */
-position:relative;
-/*
-width: 66px;
-height: 16px;
-left: 10px;
-top: 16px;*/
-
-font-family: 'Value Sans Pro';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 16px;
-
-/* identical to box height */
-
-/* Темно-зеленый */
-color: #274646;
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 24px 0px;
-padding: 10px;
+  /* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 
-/* Line 4 */
-.headermid_line{
-position: static;
-width: 1295px;
-height: 0px;
-left: 260px;
-bottom: 55px;
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
 
-border: 1px solid #E5E5E5;
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
 
-/* Inside auto layout */
-flex: non e;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-margin: 0px 0px;
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей 
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}*/
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
