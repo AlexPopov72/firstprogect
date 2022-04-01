@@ -18,8 +18,8 @@
 margin-left: 316px;
 
     }
-    img {
-        max-width: 100%;
+        img {
+            max-width: 100%;
         display: block;
     }
 
@@ -27,14 +27,8 @@ margin-left: 316px;
     margin-left: 44px;
 }
 
-@font-face {
-    font-family: Value Sans Pro; /* Имя шрифта */
-    src: url(href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet"); /* Путь к файлу со шрифтом */
-   }
-  
 .telephone{
     margin-left: 24px;
-    font-family: 'Value Sans Pro' sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -47,5 +41,37 @@ margin-left: 316px;
 }
 
 .mapicon{
+    display:flex;
     margin-left: 33px;
+    margin-bottom: 18px;
+}
+.addres_top{
+    margin-left: 9px;
+    display:flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFE091; 
+
+}
+.shicon{
+    margin-left: 560px;
+    display:flex;
+    margin-bottom: 19px;
+   
+}
+.shimigi{
+    margin-left: 9px;
+    display:flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    color: #FFBDC8; 
+}
+.bagshop{
+    margin-left: 30px;
+    display:flex;
+    margin-bottom: 19px;
 }
