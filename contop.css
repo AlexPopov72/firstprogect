@@ -1,0 +1,77 @@
+
+.flex-container_top{
+    width: 100%;
+    height: 54px;
+    left: 0px;
+    top: 0px;
+    display:flex;  
+    flex-wrap: wrap;
+    padding-top: 20px;
+    
+    /* Темно-зеленый */
+    background: #274646;
+    align-self: baseline;
+    flex-grow: 0;
+    margin: 0px 0px;
+    }
+.navbur{
+margin-left: 316px;
+
+    }
+        img {
+            max-width: 100%;
+        display: block;
+    }
+
+.logomax{
+    margin-left: 44px;
+}
+
+.telephone{
+    margin-left: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    
+    /* identical to box height, or 114% */
+    
+    /* Серый */
+    color: #A0A0A0; 
+}
+
+.mapicon{
+    display:flex;
+    margin-left: 33px;
+    margin-bottom: 18px;
+}
+.addres_top{
+    margin-left: 9px;
+    display:flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFE091; 
+
+}
+.shicon{
+    margin-left: 560px;
+    display:flex;
+    margin-bottom: 19px;
+   
+}
+.shimigi{
+    margin-left: 9px;
+    display:flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    color: #FFBDC8; 
+}
+.bagshop{
+    margin-left: 30px;
+    display:flex;
+    margin-bottom: 19px;
+}
