@@ -2,35 +2,30 @@
 position: relative;
 display: flex;
 width: 100%;
-background: #274646;
-flex-wrap: wrap;
-height: 54px;
-align-items: center;
-justify-self: center;
-
-
-
-
 }
 .head_left{
     position: relative;
-    width: auto;
-    height: inherit;
-    
 }
 .head_right{
+    display: flex;
     position: relative;
-    width: auto;
-    height: inherit;
 }
- .flex_container_top{
-    
-    display:flex;
-    
-    font-weight: 700;
-    height: inherit;
+.flex_container_top{
+    display:flex; 
+    flex-wrap: wrap;
+    /*width: 100%;*/
+    height: 54px;
+    /*left: 0px;
+    top: 0px;*/
     align-items: center;
-    justify-self: center;
+    /*padding-top: 20px;*/
+    font-weight: 700;
+    
+    /* Темно-зеленый */
+    background: #274646;
+    align-self: baseline;
+    flex-grow: 0;
+    margin: 0px 0px;
     }
 
 
